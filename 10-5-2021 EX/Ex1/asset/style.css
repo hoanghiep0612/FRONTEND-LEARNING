@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    height: 100vh;
+    background-color: gray;
+}
+
+.container {
+    padding: 50px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.FashMassage {
+    margin: 0 15px;
+    padding: 50px;
+    text-align: center;
+    width: 28.5%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 8px 12px #000000b8;
+    ;
+    display: inline-block;
+}
+
+.FashMassage .FashMassage__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.FashMassage .FashMassage__desc {
+    font-size: 1.2rem;
+    margin: 18px 0;
+    font-weight: 250;
+}
+
+.FashMassage .FashMassge_click--one {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #5ACB9D;
+}
+
+.FashMassage .FashMassge_click--two {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #F34F49;
+}

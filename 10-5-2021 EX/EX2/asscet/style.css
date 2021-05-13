@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'poppin', sans-serif;
+}
+
+.warp {
+    height: 100vh;
+    background-color: #45394D;
+}
+
+.container {
+    padding: 180px 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.infoCart__category {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px 40px;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.infoCart__category .category__desc {
+    margin: 12px 0;
+    font-size: 1.5rem;
+}
+
+.thumbalnail {
+    margin-left: 15px;
+}
+
+.infoCart {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.infoCart__category .category__titile {
+    font-size: 2rem;
+    margin-top: 10px;
+}
