@@ -1,4 +1,4 @@
-git . git status
-. git add*
+.git status
+. git add *
 . git commit -m "noi dung"
 . git push origin main
