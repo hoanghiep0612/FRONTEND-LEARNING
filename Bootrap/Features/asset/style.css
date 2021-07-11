@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 33.3%;
+    margin-right: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.b-example-divider {
+    height: 5rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+.my-5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.features-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    background-color: #F8F9FA;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .7rem 1rem;
+    font-size: 1.7rem;
+    border-radius: .75rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.bc-blue {
+    background-color: #5397E7;
+}
+
+.features-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.features-link {
+    font-size: 1.6rem;
+    color: #1372FD;
+}
