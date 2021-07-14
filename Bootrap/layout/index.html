@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style.css">
+    <script src="./asset/Script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
@@ -57,9 +58,12 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5 ">
-                    <img class="col-img"
-                        src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
-                        alt="">
+                    <div class="portital"
+                        onclick="showModal('modal-title' , 'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png' , 'motal-desc')">
+                        <img class="col-img"
+                            src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+                            alt="">
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
                     <img class="col-img"
@@ -100,17 +104,17 @@
                 </div>
             </div>
             <div class="d-flex text-white py-2">
-                <div class="desc-items col-lg-4 ms-auto">
+                <div class="desc-items col-lg-6 ms-auto">
                     Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
                     source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
                     customization.
                 </div>
-                <div class="desc-items col-lg-4 me-auto">You can create your own custom avatar for the masthead, change
+                <div class="desc-items col-lg-6 me-auto">You can create your own custom avatar for the masthead, change
                     the icon in the
                     dividers, and add your email address to the contact form to make it fully functional!</div>
             </div>
-            <div class="btn-group text-algin-center py-2">
-                <button class="btn btn-primary" type="button">
+            <div class="btn-group text-algin-center py-2 ">
+                <button class="btn btn-download" type="button">
                     <i class="fas fa-download"></i>
                     Free Download!
                 </button>
@@ -173,7 +177,7 @@
                     <a class=" btn-outline btn-social" href="#"><i class="icon-footer fas fa-basketball-ball"></i></a>
                 </div>
                 <div class="col-lg-4 mb-5 text-white text-algin-center">
-                    <h4 class="feature-footer_title text-algin-center">ABOUT FREELANCER</h4>
+                    <h4 class="feature-footer_title text-algin-center mb-3">ABOUT FREELANCER</h4>
                     <p class="footer-desc text-algin-center">Freelance is a free to use, MIT licensed Bootstrap theme
                         created by <a href="#" class="text-footer">Start Bootstrap </a>.</p>
                 </div>
@@ -184,29 +188,34 @@
         </div>
     </footer>
 
-    <div class="motal container text-algin-center">
-        <div class="modal-header">
-            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
-        </div>
-        <div class="Feature-header">
-            <div class="feature-header_title text-algin-center color-blue">LOG CABIN</div>
-            <div class="hero-icon d-flex  my-2 justify-content-center align-item-center">
-                <div class="custom-line  "></div>
-                <i class="fas fa-star color-blue "></i>
-                <div class="custom-line"></div>
+    <div class="motal">
+        <div class="modal-overlay"></div>
+        <div class="motal-content container text-algin-center" onclick="hideModal()">
+            <div class="modal-header">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">X</button>
             </div>
-        </div>
-        <img class="img-motal mb-3" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="">
-        <div class="motal-desc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias
-            magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
-            consequuntur itaque. Nam.
-        </div>
-        <div class="btn-group">
-            <button type="button" href="#" class="btn btn-primary">
-                <i class="fas fa-times"></i>
-                Close Window
-            </button>
+            <div class=" modal-title Feature-header pt-8">
+                <div class="feature-header_title text-algin-center color-blue">LOG CABIN</div>
+                <div class="hero-icon d-flex  my-2 justify-content-center align-item-center">
+                    <div class="custom-line  "></div>
+                    <i class="fas fa-star color-blue "></i>
+                    <div class="custom-line"></div>
+                </div>
+            </div>
+            <img class="img-motal mb-3"
+                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="">
+            <div class="motal-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil,
+                molestias
+                magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+                consequuntur itaque. Nam.
+            </div>
+            <div class="btn-modal-close">
+                <button type="button" href="#" class="btn btn-primary">
+                    <i class="fas fa-times"></i>
+                    Close Window
+                </button>
+            </div>
         </div>
     </div>
 </body>
