@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+
+.pt-1{
+    padding-top: 1rem ;
+}
+
+.pb-1{
+    padding-bottom: 1rem;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.img-title{
+    width: 72px;
+}
+
+form{
+    width: 100%;
+}
+
+.btn-sign{
+    width: 100%;
+    background-color: #0D6EFD;
+    border: none;
+    padding: 1.2rem 0;
+    border-radius: 6px;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-desc{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.from-floating{
+    position: relative;
+    font-size: 2rem;
+}
+
+.span-pos{
+    position: absolute;
+    padding: 1rem 0.75rem;
+    border:1px solid transparent;
+    pointer-events: none;
+    transform-origin:0 0 ;
+    cursor: default;
+}
+
+.form-control{
+    padding: 1.8rem 1.2rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+label{
+    display: inline-block;
+}
+
+
+.desc-bottom{
+    color: #6C7590;
+}
+
+.inpt:first-child{
+    border: solid 1px #CED4DA;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.inpt2:first-child{
+    border: solid 1px #CED4DA;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 450;
+    margin-top: 5rem;
+}
+
+a{
+    color: #0D6EFD;
+}
+
+.hero{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.desc-hero{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+.text-font{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+footer{
+    display: block;
+    margin-top: auto;
+    background-color: #F8F9FA;
+    width: 100%;
+}
+
+.desc-footer{
+    padding: 2rem 0;
+    color: #83757D;
+    font-size: 1.5rem;
+}
