@@ -136,7 +136,7 @@ footer {
     color: white;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .btn-search {
       display: none;
     }
@@ -165,7 +165,7 @@ footer {
       top: 10px;
       right: 10px;
     }
-  }
+  } */
   
   .navbar .active {
     display: flex;
