@@ -85,18 +85,19 @@ h1{
     line-height: 1.5;
 }
 
-.from-floating{
+.form-floating{
     position: relative;
     font-size: 2rem;
 }
 
-.span-pos{
+.form-floating label{
     position: absolute;
     padding: 1rem 0.75rem;
     border:1px solid transparent;
     pointer-events: none;
-    transform-origin:0 0 ;
     cursor: default;
+    top: 0;
+    left: 0;
 }
 
 .form-control{
@@ -125,4 +126,16 @@ label{
     border: solid 1px #CED4DA;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+.form-floating .form-control:focus ~ label{
+    color: red;
+}
+
+.form-floating .form-control:hover{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }

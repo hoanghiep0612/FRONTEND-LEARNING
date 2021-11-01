@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/asset/style.css">
+    <link rel="stylesheet" href="asset/app.js">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +19,18 @@
 
 <body class="text-center">
     <div class="container">
+        <div class="alert-validate">
+            input required
+        </div>
         <form>
             <img class="img-title mb-2" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="">
             <h1 class="mb-2">Please sign in</h1>
             <div class="form-floating">
-                <input class="form-control inpt pb-1 pt-1" type="email" placeholder="Email Adress">
+                <input class="form-control inpt pb-1 pt-1" type="email" name = "email" >
                 <label class="span-pos text-desc">Email Address</label>
             </div>
             <div class="form-floating  mb-2">
-                <input class="form-control inpt2 pb-1 pt-1" type="email" placeholder="Password">
+                <input class="form-control inpt2 pb-1 pt-1" type="password" name = "password" >
                 <label  class="span-pos text-desc">Password</label>
             </div>
             <div class="checkbox mb-2">

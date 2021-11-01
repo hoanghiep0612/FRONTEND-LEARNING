@@ -11,6 +11,9 @@ html{
 
 body{
     height: 100vh;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
 }
 
 .container{

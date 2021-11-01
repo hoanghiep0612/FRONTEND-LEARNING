@@ -1,66 +1,173 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
 
-body{
+body {
     height: 100vh;
-}
-
-.d-flex{
+    margin: auto;
+    flex-direction: column;
     display: flex;
 }
 
-.container{
+p {
+    display: inline-block;
+}
+
+.d-flex {
     display: flex;
+}
+
+.container {
     flex-wrap: wrap;
     height: 100%;
     margin: 0 auto;
-    max-width: 680px;
+    max-width: 1280px;
 }
 
-h1{
+ul li {
+    list-style: none;
+    margin-right: 12px;
+}
+
+.sreach {}
+
+h1 {
     font-size: 4rem;
     font-weight: 450;
     margin-top: 5rem;
 }
 
-a{
+a {
     color: #0D6EFD;
 }
 
-.hero{
+.text-decore{
+    text-decoration: none;
+}
+
+.hero {
     width: 100%;
     flex-shrink: 0;
 }
 
-.desc-hero{
+
+.desc-hero {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.5;
     margin: 1.5rem 0;
 }
 
-.text-font{
+.text-font {
     font-size: 1.7rem;
     font-weight: 400;
 }
 
-footer{
+footer {
     display: block;
     margin-top: auto;
     background-color: #F8F9FA;
     width: 100%;
 }
 
-.desc-footer{
+.desc-footer {
     padding: 2rem 0;
     color: #83757D;
     font-size: 1.5rem;
 }
+
+.navbar{
+    background-color: #212529;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-grey{
+    color: #939D9E;
+}
+
+.text-gray{
+    color: #575C5F;
+}
+
+.desc-pink{
+    color: pink;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.text-nav{
+    font-size: 1.7rem;
+}
+
+.text-nav_title{
+    font-size: 2.1rem;
+}
+
+.inp-search{
+    font-size: 1.6rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.btn-search{
+    font-size: 1.7rem;
+    padding: 6px 10px;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: greenyellow;
+}
+
+.btn-search:hover{
+    background-color: rgb(24, 255, 24);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .btn-search {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar .navbar-nav .nav-list {
+      flex-direction: column;
+    }
+  
+    form.search {
+      display: none;
+    }
+  
+    button.navbar-toggler {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  .navbar .active {
+    display: flex;
+  }
+  
