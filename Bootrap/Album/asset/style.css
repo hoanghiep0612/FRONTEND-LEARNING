@@ -13,8 +13,26 @@ a{
     display: inline-block;
 }
 
+.btn-menu{
+  margin: 20px 0;
+}
+
 h1{
     font-size: 3rem;
+}
+
+.navbar-topcontent{
+  flex-direction: column;
+}
+
+@media (min-width:576px){
+  .navbar-topcontent{
+    flex-direction: row;
+  }
+}
+
+.flex-colom{
+  flex-direction: column;
 }
 
 h2{
@@ -31,7 +49,9 @@ h2{
 }
 
 
-
+.ali-center{
+  align-items: center;
+}
 .text-center{
     text-align: center;
 }
@@ -39,12 +59,11 @@ h2{
 .container{
     max-width: 1320px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
-.ml-offset{
-    margin-left: 9.333333%;
-}
+.pl-offset{
+  padding-left: 26rem !important;
+} 
 
 .mr-1{
   margin-right: 0.5rem;
@@ -71,7 +90,7 @@ h2{
 }
 
 .mt-2{
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .bor-radius{
@@ -81,6 +100,25 @@ h2{
 
 .pd-1{
   padding-right: 1.7rem;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 }
 
 .col {
@@ -192,7 +230,7 @@ h2{
     .col-sm-6 {
       flex: 0 0 auto;
       width: 50%;
-      border: 1px solid orange;
+      
     }
   
     .col-sm-7 {
@@ -464,6 +502,7 @@ h2{
   font-size: 2rem;
   padding: .8rem;
 }
+
 
 .nav-top{
   display: none;
