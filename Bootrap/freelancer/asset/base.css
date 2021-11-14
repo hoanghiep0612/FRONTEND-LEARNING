@@ -354,6 +354,10 @@ a {
   padding: 1.5rem;
 }
 
+.pb-1 {
+  padding-bottom: 2rem;
+}
+
 .my-6 {
   padding: 6rem 0;
 }
@@ -571,6 +575,12 @@ a {
   text-align: center;
 }
 
+.fix {
+  height: 100vh;
+  padding-top: calc(calc(6rem + 104px));
+  padding-bottom: 6rem;
+}
+
 .btn-outline {
   color: #f8f9fa;
   border-color: white;
@@ -583,9 +593,17 @@ a {
   border: none;
 }
 
-ul li>a:hover{
+ul li>a:hover {
   color: #1ABC9C;
 }
+
+/* .menu-flex {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+} */
 
 @media (max-width:990px) {
   .navbar {
